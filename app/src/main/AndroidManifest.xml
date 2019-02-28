@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="rikkesoft.trongvu.com.flashlight">
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,7 @@
         <activity android:name=".BulbtwoActivity">
         </activity>
         <activity android:name=".DenGiaoThongActivity"></activity>
+        <activity android:name=".FlashCameraActivity"></activity>
     </application>
 
 </manifest>

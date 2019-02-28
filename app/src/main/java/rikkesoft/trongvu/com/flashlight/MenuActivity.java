@@ -13,6 +13,7 @@ public class MenuActivity extends Activity implements View.OnClickListener {
     private ImageButton ibtn_lightOnOff;
     private ImageButton ibtn_bulbtwo;
     private ImageButton ibtn_traffic;
+    private ImageButton ibtn_car;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class MenuActivity extends Activity implements View.OnClickListener {
         ibtn_lightOnOff.setOnClickListener(this);
         ibtn_bulbtwo.setOnClickListener(this);
         ibtn_traffic.setOnClickListener(this);
+        ibtn_car.setOnClickListener(this);
     }
 
     /*
@@ -30,6 +32,8 @@ public class MenuActivity extends Activity implements View.OnClickListener {
         ibtn_lightOnOff = (ImageButton) findViewById(R.id.ibtn_flashlight);
         ibtn_bulbtwo = (ImageButton) findViewById(R.id.ibtn_bulbtwo);
         ibtn_traffic = (ImageButton) findViewById(R.id.ibtn_traffic);
+        ibtn_car = (ImageButton) findViewById(R.id.ibtn_car);
+
     }
 
     /*
@@ -49,6 +53,11 @@ public class MenuActivity extends Activity implements View.OnClickListener {
             case R.id.ibtn_traffic:
                 Intent intent3 = new Intent(MenuActivity.this,DenGiaoThongActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.ibtn_car:
+                Intent intent4 = new Intent(MenuActivity.this,FlashCameraActivity.class);
+                startActivity(intent4);
+                break;
                 default:
                     break;
         }
